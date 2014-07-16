@@ -1,0 +1,6 @@
+for pi in open('/Users/admin/Documents/Math/IB/EE/translatedvalues.rtf'):
+    pi = pi.upper()
+    words = [word.rstrip() for word in open('/Users/admin/Documents/Math/IB/EE/wordlist.rtf') if word.rstrip().upper() in pi]
+words.sort(key=len)
+for word in words:
+    print word
